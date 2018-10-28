@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456016136098418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 5.35, z: -0.019243937}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,11 +56,15 @@ MonoBehaviour:
   - {fileID: 1713124820057628, guid: 760a4783aa2966b49ab81e91c23fefe0, type: 2}
   - {fileID: 1328681587378034, guid: 25ab09a78d295c849872f36f7b8f8ef0, type: 2}
   - {fileID: 1147601502730254, guid: 02df9f72a16970a4380b4031ae45f379, type: 2}
+  - {fileID: 1499813369410776, guid: 6da4fca4fc1c97f489fab6c28535c426, type: 2}
+  - {fileID: 1838573858138374, guid: 59508562e2fd7ff4ebdfd445ea5655ee, type: 2}
   corpses:
-  - {fileID: 1429223923282044, guid: 634a92e65a5089e469a7c074f2f56ca4, type: 2}
-  - {fileID: 1429223923282044, guid: 634a92e65a5089e469a7c074f2f56ca4, type: 2}
-  - {fileID: 1429223923282044, guid: 634a92e65a5089e469a7c074f2f56ca4, type: 2}
-  - {fileID: 1429223923282044, guid: 634a92e65a5089e469a7c074f2f56ca4, type: 2}
+  - {fileID: 1016371209185534, guid: 9977ffea148c30a4985e76491e3db680, type: 2}
+  - {fileID: 1185789253129532, guid: ae68d7c125d96284abf880c7bbc878db, type: 2}
+  - {fileID: 1542263125397572, guid: 98103e1799b30934cb7cda57edf66cfe, type: 2}
+  - {fileID: 1858493456569840, guid: ee6542551b1b4d844965ff385969d05b, type: 2}
+  - {fileID: 1156636392105320, guid: 03ac46743513e264682190d35688cd31, type: 2}
+  - {fileID: 1536548844889228, guid: 31d72f2f438c95e4b81c674b35ebd763, type: 2}
   targets:
   - {fileID: 0}
   spawnValues: {x: 5, y: 0}

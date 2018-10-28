@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50982193446433658}
   - component: {fileID: 212620007921218272}
   - component: {fileID: 61056470626715290}
+  - component: {fileID: 95089530819374616}
   m_Layer: 0
   m_Name: EnemyP
   m_TagString: Purple
@@ -88,6 +89,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.9549928, y: 5.3254128}
   m_EdgeRadius: 0
+--- !u!95 &95089530819374616
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1147601502730254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e30158dd384f6db419238041fb67e1d1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114484669015377596
 MonoBehaviour:
   m_ObjectHideFlags: 1
