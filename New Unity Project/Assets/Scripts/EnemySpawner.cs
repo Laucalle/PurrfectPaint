@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
     public GameObject[] enemies;
+    public GameObject[] corpses;
+
     public Transform[] targets;
     public Vector2 spawnValues;
     float spawnWait;
@@ -31,6 +33,7 @@ public class EnemySpawner : MonoBehaviour {
                 Random.Range(-spawnValues.y, spawnValues.y), 0);
             GameObject enemy = Instantiate(enemies[randEnemy], SpawnPosition + transform.position, gameObject.transform.rotation) as GameObject;
             enemy.GetComponent<EnemyBehaviour>().target = targets[Random.Range(0, targets.Length)];
+            enemy.GetComponent<EnemyBehaviour>().corpse = corpses[randEnemy];
             yield return new WaitForSeconds(spawnWait);
         }
     }
