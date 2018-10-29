@@ -6,6 +6,8 @@ public class EnemyBehaviour : MonoBehaviour {
     public Transform target;
     public float speed;
     public GameObject corpse;
+
+    private bool trigger = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -28,9 +30,16 @@ public class EnemyBehaviour : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collider)
     {
         //Debug.Log(gameObject.name + "colisiona con " + collider.gameObject.name);
-        if (collider.gameObject.layer == LayerMask.NameToLayer("Stain") && collider.gameObject.tag == gameObject.tag) {
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Stain") && collider.gameObject.tag == gameObject.tag && !trigger) {
+            trigger = true;
+            this.transform.parent.gameObject.GetComponent<EnemySpawner>().IncreaseScore();
             Instantiate(corpse, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
+        }
+
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Exit"))
+        {
+            this.transform.parent.gameObject.GetComponent<EnemySpawner>().GameOver();
         }
     }
 }
