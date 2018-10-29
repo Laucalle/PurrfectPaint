@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    public Animator catAnimator;
     public GameObject[] stain;
     public float moveSpeed = 5f;
 
@@ -11,6 +12,7 @@ public class Player : MonoBehaviour {
     public float distance = 7.5f;
 
     public float fireSpeed = 5f;
+
     private int color = 0;
     private float nextTimeToFire = 0f;
 
@@ -22,14 +24,16 @@ public class Player : MonoBehaviour {
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, moveSpeed * Time.deltaTime);
 
-        if(transform.rotation.eulerAngles.z <= 360 && transform.rotation.eulerAngles.z >= 275)
+        if(transform.rotation.eulerAngles.z <= 360f && transform.rotation.eulerAngles.z >= 275f)
         {
-            transform.eulerAngles = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
+            transform.eulerAngles = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0f);
         }
-        else if(transform.rotation.eulerAngles.z >= 180 && transform.rotation.eulerAngles.z < 275)
+        else if(transform.rotation.eulerAngles.z >= 180f && transform.rotation.eulerAngles.z < 275f)
         {
-            transform.eulerAngles = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 180);
+            transform.eulerAngles = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 180f);
         }
+
+        AnimateCat();
 
         if (Input.GetMouseButtonDown(0) && Time.time >= nextTimeToFire)
         {
@@ -42,6 +46,22 @@ public class Player : MonoBehaviour {
 
         }
 
+    }
+
+    private void AnimateCat()
+    {
+        if (transform.rotation.eulerAngles.z >= 0f && transform.rotation.eulerAngles.z < 60f)
+        {
+            catAnimator.Play("RightCat");
+        }
+        else if (transform.rotation.eulerAngles.z >= 60f && transform.rotation.eulerAngles.z < 120)
+        {
+            catAnimator.Play("BackCat");
+        }
+        else if (transform.rotation.eulerAngles.z >= 120 && transform.rotation.eulerAngles.z <= 180)
+        {
+            catAnimator.Play("LeftCat");
+        }
     }
 
     private void CheckColor()
