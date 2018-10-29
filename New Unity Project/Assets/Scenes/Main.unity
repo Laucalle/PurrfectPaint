@@ -1631,7 +1631,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4669419215495140, guid: 344579dbbb3f83545a24ab3589fc6858, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114119614696414802, guid: 344579dbbb3f83545a24ab3589fc6858,
         type: 2}
@@ -1879,7 +1879,7 @@ Transform:
   m_LocalScale: {x: 4.658148, y: 4.419558, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440502791
 GameObject:
@@ -2300,6 +2300,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.size
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4976062379823266, guid: eda2b1db5c577c24a8aedf129cb1f31e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2330,6 +2335,88 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4976062379823266, guid: eda2b1db5c577c24a8aedf129cb1f31e, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[0]
+      value: 
+      objectReference: {fileID: 1436495743059320, guid: 8df1419ef75160f428e46e08f18e4b97,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[1]
+      value: 
+      objectReference: {fileID: 1725006140217348, guid: 22c80b65c5283e344af0bff901eca075,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[2]
+      value: 
+      objectReference: {fileID: 1472319188943372, guid: d41f315e833f82f4c84e1ac7e4114f7d,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[3]
+      value: 
+      objectReference: {fileID: 1013876148998424, guid: c8f6ebff7559ba744938304efeadd939,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[4]
+      value: 
+      objectReference: {fileID: 1973215222607978, guid: 3cad6d548951a3b45af02b9c1680cbf2,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[5]
+      value: 
+      objectReference: {fileID: 1109054512505252, guid: 04ea5a63c134f804f85d8d7c156ea448,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[6]
+      value: 
+      objectReference: {fileID: 1869904425077840, guid: a8be851809df634458977488846fcabc,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[7]
+      value: 
+      objectReference: {fileID: 1593829990842316, guid: 3b6ff704134b85f40a5b164c7d0631ad,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[8]
+      value: 
+      objectReference: {fileID: 1414003879697312, guid: f1d82efca2cda8643aa3610584110184,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[9]
+      value: 
+      objectReference: {fileID: 1355044273176204, guid: af02bd0517664124e93e84cc2d222ae8,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[10]
+      value: 
+      objectReference: {fileID: 1240054784303174, guid: 22080cb2fe2db324d9a31327db052985,
+        type: 2}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: stain.Array.data[11]
+      value: 
+      objectReference: {fileID: 1769237667119230, guid: 92c8a2fc351a0f244bb4ba5bcf1194d8,
+        type: 2}
+    - target: {fileID: 212580930956854788, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612240304469032, guid: eda2b1db5c577c24a8aedf129cb1f31e,
+        type: 2}
+      propertyPath: fireSpeed
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []

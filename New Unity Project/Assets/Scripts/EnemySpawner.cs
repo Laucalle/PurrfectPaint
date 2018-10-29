@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour {
     float spawnWait;
     public float maxSpawnWait;
     public float minSpawnWait;
-    public int startWait;
+    public float startWait;
     public bool stop;
 
     int randEnemy;

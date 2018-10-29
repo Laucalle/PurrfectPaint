@@ -27,8 +27,8 @@ public class EnemyBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Colisiona con " + collider.gameObject.name);
-        if (collider.gameObject.layer == LayerMask.NameToLayer("Stain")) {
+        //Debug.Log(gameObject.name + "colisiona con " + collider.gameObject.name);
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Stain") && collider.gameObject.tag == gameObject.tag) {
             Instantiate(corpse, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
