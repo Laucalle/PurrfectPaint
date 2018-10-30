@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public AudioSource paintFire;
+    public Animator paintingPot;
     public Animator catAnimator;
     public GameObject[] stain;
     public float moveSpeed = 5f;
@@ -35,11 +36,11 @@ public class Player : MonoBehaviour {
         }
 
         AnimateCat();
+        CheckColor();
 
         if (Input.GetMouseButtonDown(0) && Time.time >= nextTimeToFire)
         {          
             nextTimeToFire = Time.time + 1f / fireSpeed;
-            CheckColor();
             if (color != -1)
             {
                 paintFire.Play();
@@ -70,6 +71,7 @@ public class Player : MonoBehaviour {
     {
         if(Input.GetKey(KeyCode.Alpha1) && Input.GetKey(KeyCode.Alpha2) && Input.GetKey(KeyCode.Alpha3))
         {
+            paintingPot.Play("NoneSelect");
             color = -1;
             return;
         } 
@@ -78,16 +80,18 @@ public class Player : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.Alpha2))
             {
+                paintingPot.Play("GreenSelect");
                 color = 3;
                 return;
             }
 
             if(Input.GetKey(KeyCode.Alpha3))
             {
+                paintingPot.Play("OrangeSelect");
                 color = 5;
                 return;
             }
-
+            paintingPot.Play("YellowSelect");
             color = 0;
             return;
         }
@@ -96,19 +100,22 @@ public class Player : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.Alpha3))
             {
+                paintingPot.Play("PurpleSelect");
                 color = 4;
                 return;
             }
-
+            paintingPot.Play("CyanSelect");
             color = 1;
             return;
         }
 
         if(Input.GetKey(KeyCode.Alpha3))
         {
+            paintingPot.Play("MagentaSelect");
             color = 2;
             return;
         }
+        paintingPot.Play("NoneSelect");
         color = -1;
         return;
 
