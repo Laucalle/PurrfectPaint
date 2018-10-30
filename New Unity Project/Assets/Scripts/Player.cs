@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    public AudioSource paintFire;
     public Animator catAnimator;
     public GameObject[] stain;
     public float moveSpeed = 5f;
@@ -36,11 +37,12 @@ public class Player : MonoBehaviour {
         AnimateCat();
 
         if (Input.GetMouseButtonDown(0) && Time.time >= nextTimeToFire)
-        {
+        {          
             nextTimeToFire = Time.time + 1f / fireSpeed;
             CheckColor();
             if (color != -1)
             {
+                paintFire.Play();
                 GenerateCone(color);
             }
 

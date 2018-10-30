@@ -11,8 +11,9 @@ public class GameOverMenu : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void QuitGame()
+    public void ReturnTitle()
     {
-        Application.Quit();
+        SoundManager.instance.PlayMusic(true);
+        SceneManager.LoadScene(0);
     }
 }
